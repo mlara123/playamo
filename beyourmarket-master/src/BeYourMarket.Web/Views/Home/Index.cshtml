@@ -1,0 +1,79 @@
+﻿@using MoreLinq;
+@model BeYourMarket.Web.Models.SearchListingModel
+
+@{
+    ViewBag.Title = CacheHelper.Settings.Name;
+    var imagePath = ImageHelper.GetCommunityImagePath("cover");
+    var bgCss = string.Empty;
+
+    if (!string.IsNullOrEmpty(imagePath))
+    {
+        bgCss = string.Format(@"background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url(""{0}""); background-size: cover;", imagePath);
+    }
+}
+
+@section Styles {
+    <link href="~/css/formstone/lightbox.css" rel="stylesheet" />
+    <link href="~/js/timepicker/bootstrap-datepicker.min.css" rel="stylesheet" />
+}
+
+<div class="landing-bg jumbotron text-center" style="@bgCss">
+    <div class="container" style="margin: 0 auto; max-width: 200em;">
+        <h1>@CacheHelper.Settings.Slogan</h1>
+        <p class="lead">@CacheHelper.Settings.Description</p>
+        <form method="get" action="@Url.Action("Search", "Home")" class="form-group-lg" > 
+                <div class="input-group-btn">
+                    <input type="text" class="form-control inline" placeholder="¿Que Buscas?" name="SearchText">
+                        <input type="text" class="form-control inline datepicker" id="FromDate" name="FromDate" placeholder="[[[Desde]]]" data-rule-required="true" data-rule-date="true"/>
+                        <input type="text" class="form-control inline datepicker" id="ToDate" name="ToDate" placeholder="[[[Hasta]]]" data-rule-required="true" data-rule-date="true" />                  
+                    <select name="Passengers" class="form-control inline">
+                        <option selected>Cantidad de Pasajeros</option>
+                        <option value="1">1 Pasajero</option>
+                        <option value="2">2 Pasajeros</option>
+                        <option value="3">3 Pasajeros</option>
+                        <option value="4">4 Pasajeros</option>
+                        <option value="5">5 Pasajeros</option>
+                        <option value="6">6 Pasajeros</option>
+                        <option value="7">7 Pasajeros</option>
+                        <option value="8">8 Pasajeros</option>
+                        <option value="9">9 Pasajeros</option>
+                        <option value="10">10 Pasajeros</option>
+                        <option value="11">10+ Pasajeros</option>
+                    </select>
+                    <button type="submit" class="btn-primary btn-lg inline"><i class="mdi-action-search"></i>[[[Buscar]]]</button>
+                </div>
+        </form>
+    </div>
+</div>
+
+<div class="container-fluid body-content">
+    <div class="row">
+        <div class="col-md-12 section-title">
+            <h4>[[[Latest Listings]]] <a class="btn btn-default btn-sm pull-right" href="@Url.Action("Search","Home")">[[[See All Listings]]] &raquo;</a></h4>
+        </div>
+    </div>
+
+    <div class="row row-eq-height m-b-10">
+        @foreach (var item in Model.ListingsPageList.Take(8))
+        {
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                @Html.Partial("~/Views/Listing/_ListingCard.cshtml", item)
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/timepicker/bootstrap-datepicker.js"></script>
+    @Html.Partial("_LocalizationDatePicker")
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                $('.datepicker').datepicker({
+                    startDate: new Date(),
+                    daysOfWeekDisabled: "0",
+                    language: '@Context.GetPrincipalAppLanguageForRequest().ToString()'
+                });
+            });
+    </script>
+}
