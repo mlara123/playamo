@@ -47,7 +47,7 @@
                             <fieldset>
 
                                 <div class="form-group">
-                                    <label>[[[Categoria]]]</label>
+                                    <label>[[[Category]]]</label>
                                     @Html.DropDownListFor(m => m.CategoryID, new SelectList(Model.Categories, "ID", "Name", Model.CategoryID), "[[[All Categories]]]", new { @class = "form-control", onchange = "this.form.submit()" })
                                 </div>
                                 <!--
@@ -67,8 +67,8 @@
                                 </div>
                                     -->
                                 <div class="form-group">
-                                    <label>[[[Location]]]</label>
-                                    <input type="text" class="form-control" placeholder="[[[Location]]]" id="Location" name="Location" value="@Model.Location">
+                                    <label>[[[Passengers]]]</label>
+                                    <input type="text" onfocus="this.type='number'" min="1" class="form-control" id="Location" placeholder="[[[Passengers]]]" name="Location" value="@Model.Passengers">
                                 </div>
 
                                 <div class="form-group">
@@ -76,10 +76,10 @@
                                     <div class="row">
                                         <div>
                                             <div class="col-xs-6">
-                                                <label>[[[Desde]]]</label>
+                                                <label>[[[From]]]</label>
                                             </div>
                                             <div class="col-xs-6">
-                                                <label>[[[Hasta]]]</label>
+                                                <label>[[[To]]]</label>
                                             </div>
                                         </div>
                                             <div class="col-xs-6 range-from"><input type="date" class="form-control" placeholder="[[[From]]]" id="FromDate" name="FromDate" value="@Model.FromDate"></div>
@@ -88,10 +88,10 @@
                                 </div>
 
                                  <div class="form-group">
-                                    <label>[[[Precio]]]</label>
+                                    <label>[[[Price]]]</label>
                                     <div class="row">
-                                        <div class="col-xs-6 range-from"><input type="number" class="form-control" placeholder="[[[Desde]]]" id="PriceFrom" name="PriceFrom" value="@Model.PriceFrom"></div>
-                                        <div class="col-xs-6 range-to"><input type="number" class="form-control" placeholder="[[[Hasta]]]" id="PriceTo" name="PriceTo" value="@Model.PriceTo"></div>
+                                        <div class="col-xs-6 range-from"><input type="number" class="form-control"  placeholder="[[[From]]]" id="PriceFrom" name="PriceFrom" value="@Model.PriceFrom"></div>
+                                        <div class="col-xs-6 range-to"><input type="number" class="form-control" placeholder="[[[To]]]" id="PriceTo" name="PriceTo" value="@Model.PriceTo"></div>
                                     </div>
                                 </div>
 
@@ -100,8 +100,8 @@
                                     <input type="search" class="form-control" placeholder="[[[Search text]]]" id="SearchText" name="SearchText" value="@Model.SearchText">
                                 </div>
 
-                                <input type="checkbox" id="PhotoOnly" name="PhotoOnly" value="true" @( Model.PhotoOnly ? "checked" : "") />
-                                <label for="PhotoOnly">[[[Only show listings with photos]]]</label>
+                                @*<input type="checkbox" id="PhotoOnly" name="PhotoOnly" value="true" @( Model.PhotoOnly ? "checked" : "") />
+                                <label for="PhotoOnly">[[[Only show listings with photos]]]</label>*@
 
                                 @Html.HiddenFor(x => x.SortView)
                             </fieldset>

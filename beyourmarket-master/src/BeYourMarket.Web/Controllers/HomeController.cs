@@ -189,7 +189,6 @@ namespace BeYourMarket.Web.Controllers
             //Search Passengers
             if (!string.IsNullOrEmpty(model.Passengers.ToString()))
             {
-                // Search by title, description, location
                 if (items != null)
                 {
                     items = items.Where(x => x.Beds >= model.Passengers);
