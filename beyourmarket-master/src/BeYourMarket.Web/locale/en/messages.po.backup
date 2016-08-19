@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-08-18 17:17-03:00\n"
-"PO-Revision-Date: 2016-08-18 17:17-03:00\n"
+"POT-Creation-Date: 2016-08-19 12:55-03:00\n"
+"PO-Revision-Date: 2016-08-19 12:55-03:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:25
+#: Views\Payment\Orders.cshtml:26
 #: Areas\Admin\Views\Payment\Order.cshtml:24
 msgid "Accept"
 msgstr ""
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Accept Email"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:63
+#: Views\Listing\ListingUpdate.cshtml:70
 #: Areas\Admin\Views\Listing\Listings.cshtml:67
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:133
 msgid "Active"
@@ -120,7 +120,7 @@ msgstr ""
 msgid "Already a member?"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:25
+#: Views\Listing\ListingUpdate.cshtml:32
 msgid "Already a member? "
 msgstr ""
 
@@ -139,7 +139,7 @@ msgid "Apply"
 msgstr ""
 
 #: Views\Manage\Dashboard.cshtml:67
-#: Views\Payment\Orders.cshtml:166
+#: Views\Payment\Orders.cshtml:167
 #: Areas\Admin\Views\Listing\Categories.cshtml:101
 #: Areas\Admin\Views\Listing\Listings.cshtml:92
 #: Areas\Admin\Views\Listing\ListingTypes.cshtml:102
@@ -174,10 +174,10 @@ msgstr ""
 msgid "Button Label"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:129
+#: Views\Listing\ListingUpdate.cshtml:136
 #: Views\Listing\Review.cshtml:74
-#: Views\Payment\Orders.cshtml:26
-#: Views\Payment\Orders.cshtml:30
+#: Views\Payment\Orders.cshtml:27
+#: Views\Payment\Orders.cshtml:31
 #: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:77
 #: Areas\Admin\Views\Design\Appearance.cshtml:45
 #: Areas\Admin\Views\Design\CodeScript.cshtml:35
@@ -199,14 +199,14 @@ msgid "Cancel"
 msgstr ""
 
 #: Controllers\PaymentController.cs:167
-#: Views\Payment\Orders.cshtml:51
+#: Views\Payment\Orders.cshtml:52
 #: Areas\Admin\Views\Payment\Order.cshtml:46
 #: Areas\Admin\Views\Payment\Order.cshtml:165
 msgid "Cancelled"
 msgstr ""
 
 #: Views\Manage\Dashboard.cshtml:91
-#: Views\Payment\Orders.cshtml:189
+#: Views\Payment\Orders.cshtml:190
 #: Areas\Admin\Views\Listing\Listings.cshtml:105
 msgid "Cancelled!"
 msgstr ""
@@ -219,7 +219,7 @@ msgstr ""
 
 #: Views\Listing\Listing.cshtml:140
 #: Views\Listing\Listings.cshtml:50
-#: Views\Listing\ListingUpdate.cshtml:35
+#: Views\Listing\ListingUpdate.cshtml:42
 #: Views\Listing\_ListingGridList.cshtml:35
 #: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:4
 #: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:12
@@ -305,17 +305,17 @@ msgstr ""
 
 #: Views\Account\Register.cshtml:54
 #: Views\Account\Register.cshtml:55
-#: Views\Listing\ListingUpdate.cshtml:122
-#: Views\Listing\ListingUpdate.cshtml:123
+#: Views\Listing\ListingUpdate.cshtml:129
+#: Views\Listing\ListingUpdate.cshtml:130
 msgid "Confirm Password"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:159
+#: Views\Payment\Orders.cshtml:160
 #: Areas\Admin\Views\Payment\Order.cshtml:135
 msgid "Confirm to accept the order"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:161
+#: Views\Payment\Orders.cshtml:162
 #: Areas\Admin\Views\Payment\Order.cshtml:137
 msgid "Confirm to cancel the order"
 msgstr ""
@@ -378,10 +378,6 @@ msgstr ""
 msgid "Cover photo"
 msgstr ""
 
-#: Views\Shared\_LoginPartial.cshtml:82
-msgid "Crear una cuenta"
-msgstr ""
-
 #: Views\Manage\Index.cshtml:22
 msgid "Create"
 msgstr ""
@@ -395,8 +391,12 @@ msgstr ""
 msgid "Create Sample Data"
 msgstr ""
 
+#: Views\Shared\_LoginPartial.cshtml:82
+msgid "Create your account"
+msgstr ""
+
 #: Views\Listing\_ListingGridList.cshtml:44
-#: Views\Payment\Orders.cshtml:132
+#: Views\Payment\Orders.cshtml:133
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:49
 #: Areas\Admin\Views\Listing\Listings.cshtml:71
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:115
@@ -496,9 +496,9 @@ msgid "Deleted!"
 msgstr ""
 
 #: Views\Listing\Listing.cshtml:55
-#: Views\Listing\ListingUpdate.cshtml:48
+#: Views\Listing\ListingUpdate.cshtml:55
 #: Views\Listing\_ListingGridList.cshtml:40
-#: Views\Payment\Orders.cshtml:128
+#: Views\Payment\Orders.cshtml:129
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:46
 #: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:37
 #: Areas\Admin\Views\Listing\CategoryUpdate.cshtml:26
@@ -510,7 +510,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:49
+#: Views\Listing\ListingUpdate.cshtml:56
 msgid "Description..."
 msgstr ""
 
@@ -575,7 +575,7 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:112
+#: Views\Listing\ListingUpdate.cshtml:119
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:18
 msgid "Email Address"
 msgstr ""
@@ -637,20 +637,20 @@ msgstr ""
 msgid "Enter Email"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:113
+#: Views\Listing\ListingUpdate.cshtml:120
 msgid "Enter Email Address"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:85
+#: Views\Listing\ListingUpdate.cshtml:92
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:174
 msgid "Enter Location"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:105
+#: Views\Listing\ListingUpdate.cshtml:112
 msgid "Enter Phone Number"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:44
+#: Views\Listing\ListingUpdate.cshtml:51
 msgid "Enter Title"
 msgstr ""
 
@@ -679,7 +679,7 @@ msgstr ""
 msgid "Enter your email."
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:101
+#: Views\Listing\ListingUpdate.cshtml:108
 msgid "Enter Your Full Name"
 msgstr ""
 
@@ -710,8 +710,8 @@ msgstr ""
 
 #: Views\Manage\Dashboard.cshtml:84
 #: Views\Manage\Dashboard.cshtml:88
-#: Views\Payment\Orders.cshtml:182
-#: Views\Payment\Orders.cshtml:186
+#: Views\Payment\Orders.cshtml:183
+#: Views\Payment\Orders.cshtml:187
 msgid "Failed!"
 msgstr ""
 
@@ -762,7 +762,7 @@ msgstr ""
 msgid "Frontend"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:100
+#: Views\Listing\ListingUpdate.cshtml:107
 msgid "Full Name"
 msgstr ""
 
@@ -818,16 +818,16 @@ msgstr ""
 msgid "Hi, Welcome to {0}! I am happy to assist you if you has any questions."
 msgstr ""
 
+#: Views\Listing\ListingUpdate.cshtml:23
+msgid "Hola"
+msgstr ""
+
 #: Areas\Admin\Views\Manage\SettingsEmail.cshtml:32
 msgid "Host"
 msgstr ""
 
 #: Views\Account\Register.cshtml:61
 msgid "I accept the"
-msgstr ""
-
-#: Views\Shared\_LoginPartial.cshtml:85
-msgid "Ingresar"
 msgstr ""
 
 #: Areas\Admin\Views\Install\Index.cshtml:89
@@ -924,7 +924,7 @@ msgstr ""
 msgid "Lista"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:34
+#: Views\Listing\ListingUpdate.cshtml:41
 msgid "Listing Details"
 msgstr ""
 
@@ -990,8 +990,8 @@ msgid "Listings by category"
 msgstr ""
 
 #: Views\Listing\Listing.cshtml:167
-#: Views\Listing\ListingUpdate.cshtml:82
-#: Views\Listing\ListingUpdate.cshtml:84
+#: Views\Listing\ListingUpdate.cshtml:89
+#: Views\Listing\ListingUpdate.cshtml:91
 #: Views\Listing\_ListingGridList.cshtml:43
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:170
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:172
@@ -1006,6 +1006,7 @@ msgstr ""
 msgid "Locked Out."
 msgstr ""
 
+#: Views\Shared\_LoginPartial.cshtml:85
 #: Views\Shared\_NavigationSide.cshtml:60
 msgid "Log in"
 msgstr ""
@@ -1029,7 +1030,7 @@ msgstr ""
 msgid "Login Failure"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:26
+#: Views\Listing\ListingUpdate.cshtml:33
 msgid "Login here"
 msgstr ""
 
@@ -1163,7 +1164,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:172
+#: Views\Payment\Orders.cshtml:173
 #: Areas\Admin\Views\Payment\Order.cshtml:148
 msgid "No!"
 msgstr ""
@@ -1189,7 +1190,7 @@ msgstr ""
 msgid "Order %0 - %1 - Total Price %2 %3. <a href=\\"%4\\">See Details</a>"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:130
+#: Views\Payment\Orders.cshtml:131
 #: Areas\Admin\Views\Payment\Order.cshtml:110
 msgid "Order ID"
 msgstr ""
@@ -1214,8 +1215,8 @@ msgid "Ordering"
 msgstr ""
 
 #: Views\Payment\Orders.cshtml:7
-#: Views\Payment\Orders.cshtml:87
-#: Views\Payment\Orders.cshtml:95
+#: Views\Payment\Orders.cshtml:88
+#: Views\Payment\Orders.cshtml:96
 #: Views\Shared\_DashBoardSide.cshtml:14
 #: Areas\Admin\Views\Manage\Dashboard.cshtml:27
 #: Areas\Admin\Views\Payment\Order.cshtml:7
@@ -1258,8 +1259,8 @@ msgstr ""
 #: Views\Account\Login.cshtml:28
 #: Views\Account\Register.cshtml:50
 #: Views\Account\Register.cshtml:51
-#: Views\Listing\ListingUpdate.cshtml:118
-#: Views\Listing\ListingUpdate.cshtml:119
+#: Views\Listing\ListingUpdate.cshtml:125
+#: Views\Listing\ListingUpdate.cshtml:126
 #: Views\Manage\Index.cshtml:13
 #: Areas\Admin\Views\Install\Index.cshtml:32
 #: Areas\Admin\Views\Install\Index.cshtml:33
@@ -1296,7 +1297,7 @@ msgid "Payout information"
 msgstr ""
 
 #: Controllers\PaymentController.cs:161
-#: Views\Payment\Orders.cshtml:45
+#: Views\Payment\Orders.cshtml:46
 #: C:\Users\Matias\Documents\GitHub\playamoblados\beyourmarket-master\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:25
 #: Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:25
 #: C:\Users\Matias\Documents\GitHub\playamoblados\beyourmarket-master\src\Plugins\Plugin.Payment.Stripe\bin\Views\Transaction.cshtml:25
@@ -1305,7 +1306,7 @@ msgid "Pending"
 msgstr ""
 
 #: Models\ManageViewModels.cs:65
-#: Views\Listing\ListingUpdate.cshtml:104
+#: Views\Listing\ListingUpdate.cshtml:111
 #: Views\Manage\AddPhoneNumber.cshtml:3
 #: Views\Manage\UserProfile.cshtml:56
 #: Areas\Admin\Views\Manage\Users.cshtml:41
@@ -1369,10 +1370,10 @@ msgstr ""
 
 #: Views\Listing\Listing.cshtml:150
 #: Views\Listing\Listings.cshtml:91
-#: Views\Listing\ListingUpdate.cshtml:55
-#: Views\Listing\ListingUpdate.cshtml:57
+#: Views\Listing\ListingUpdate.cshtml:62
+#: Views\Listing\ListingUpdate.cshtml:64
 #: Views\Listing\_ListingGridList.cshtml:41
-#: Views\Payment\Orders.cshtml:125
+#: Views\Payment\Orders.cshtml:126
 #: Views\Payment\Payment.cshtml:63
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:94
 #: Areas\Admin\Views\Payment\Order.cshtml:104
@@ -1404,11 +1405,11 @@ msgstr ""
 msgid "Provider"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:17
+#: Views\Listing\ListingUpdate.cshtml:19
 msgid "Publish a listing (it's 100% free)"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:128
+#: Views\Listing\ListingUpdate.cshtml:135
 msgid "Publish Listing"
 msgstr ""
 
@@ -1425,11 +1426,11 @@ msgstr ""
 msgid "Published"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:98
+#: Views\Listing\ListingUpdate.cshtml:105
 msgid "Publisher's Info"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:127
+#: Views\Payment\Orders.cshtml:128
 #: Areas\Admin\Views\Payment\Order.cshtml:108
 msgid "Quantity"
 msgstr ""
@@ -1494,7 +1495,7 @@ msgstr ""
 #: Views\Listing\Review.cshtml:22
 #: Views\Listing\_ListingReviewModal.cshtml:10
 #: Views\Listing\_ListingReviewModal.cshtml:57
-#: Views\Payment\Orders.cshtml:35
+#: Views\Payment\Orders.cshtml:36
 msgid "Review"
 msgstr ""
 
@@ -1613,7 +1614,7 @@ msgstr ""
 msgid "Show Email"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:108
+#: Views\Listing\ListingUpdate.cshtml:115
 msgid "Show Phone"
 msgstr ""
 
@@ -1665,7 +1666,7 @@ msgstr ""
 msgid "SSL enabled"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:112
+#: Views\Payment\Orders.cshtml:113
 #: Areas\Admin\Views\Payment\Order.cshtml:94
 msgid "Status"
 msgstr ""
@@ -1679,7 +1680,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:48
+#: Views\Payment\Orders.cshtml:49
 #: Areas\Admin\Views\Payment\Order.cshtml:43
 msgid "Success"
 msgstr ""
@@ -1764,7 +1765,7 @@ msgid "Theme"
 msgstr ""
 
 #: Views\Listing\_ListingGridList.cshtml:28
-#: Views\Payment\Orders.cshtml:102
+#: Views\Payment\Orders.cshtml:103
 #: C:\Users\Matias\Documents\GitHub\playamoblados\beyourmarket-master\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:40
 #: C:\Users\Matias\Documents\GitHub\playamoblados\beyourmarket-master\src\Plugins\Plugin.Payment.Stripe\Views\Transaction.cshtml:63
 #: C:\Users\Matias\Documents\GitHub\playamoblados\beyourmarket-master\src\Plugins\Plugin.Payment.Stripe\Views\TransactionOverview.cshtml:31
@@ -1823,9 +1824,9 @@ msgstr ""
 msgid "Time Format"
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:43
+#: Views\Listing\ListingUpdate.cshtml:50
 #: Views\Listing\_ListingGridList.cshtml:38
-#: Views\Payment\Orders.cshtml:123
+#: Views\Payment\Orders.cshtml:124
 #: Areas\Admin\Views\ContentPage\ContentPages.cshtml:45
 #: Areas\Admin\Views\ContentPage\ContentPageUpdate.cshtml:30
 #: Areas\Admin\Views\Listing\Listings.cshtml:68
@@ -1900,7 +1901,7 @@ msgstr ""
 msgid "Unsuccessful login with service."
 msgstr ""
 
-#: Views\Listing\ListingUpdate.cshtml:73
+#: Views\Listing\ListingUpdate.cshtml:80
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:159
 msgid "Upload Pictures"
 msgstr ""
@@ -1917,7 +1918,7 @@ msgstr ""
 msgid "Use this area to provide additional information."
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:117
+#: Views\Payment\Orders.cshtml:118
 #: Areas\Admin\Views\Listing\ListingUpdate.cshtml:80
 #: Areas\Admin\Views\Manage\UserUpdate.cshtml:16
 msgid "User"
@@ -1996,7 +1997,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: Views\Payment\Orders.cshtml:171
+#: Views\Payment\Orders.cshtml:172
 #: Areas\Admin\Views\Payment\Order.cshtml:147
 msgid "Yes!"
 msgstr ""
@@ -2118,13 +2119,16 @@ msgstr ""
 #~ msgid "Categoria"
 #~ msgstr ""
 
+#~ msgid "Crear una cuenta"
+#~ msgstr ""
+
 #~ msgid "CreatedDate"
 #~ msgstr ""
 
 #~ msgid "Has account already? Login here"
 #~ msgstr ""
 
-#~ msgid "Hola"
+#~ msgid "Ingresar"
 #~ msgstr ""
 
 #~ msgid "Item Type"
