@@ -10,7 +10,6 @@ using BeYourMarket.Service;
 using System.Threading.Tasks;
 using BeYourMarket.Model.Models;
 using Repository.Pattern.UnitOfWork;
-using Newtonsoft.Json;
 using BeYourMarket.Web.Extensions;
 using BeYourMarket.Web.Models.Grids;
 using BeYourMarket.Web.Models;

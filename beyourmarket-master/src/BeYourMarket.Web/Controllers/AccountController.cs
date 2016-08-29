@@ -119,8 +119,7 @@ namespace BeYourMarket.Web.Controllers
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);            
             {
                 var casa = "go";
             }
@@ -129,7 +128,18 @@ namespace BeYourMarket.Web.Controllers
                 case SignInStatus.Success:
                     if (string.IsNullOrEmpty(returnUrl))
                     {
-                        return RedirectToAction("Index", "Manage");
+                        var user = await UserManager.FindByNameAsync(model.Email);
+                        var administrator = await RoleManager.FindByNameAsync(Enum_UserType.Administrator.ToString());
+                        var isAdministrator = user.Roles.Any(x => x.RoleId == administrator.Id);
+                        var owner = await RoleManager.FindByNameAsync(Enum_UserType.Owner.ToString());
+                        var isOwner = user.Roles.Any(x => x.RoleId == owner.Id);
+                        if(isAdministrator)
+                            return RedirectToAction("Index", "Manage", new { area = "Admin" });
+                        
+                        if(isOwner)
+                            return RedirectToAction("Index", "Manage");
+                        if (!isOwner&&!isAdministrator)
+                            return RedirectToAction("Index", "Home");
                     }
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:

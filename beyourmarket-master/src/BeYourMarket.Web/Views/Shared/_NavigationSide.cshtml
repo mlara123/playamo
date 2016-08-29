@@ -54,7 +54,7 @@
     </form>
     <ul class="sidebar-menu">
         @if (!User.Identity.IsAuthenticated)
-            {
+        {
             <li class="hidden-lg hidden-md">
                 <a href="@Url.Action("Login", "Account")">
                     <span>[[[Log in]]]</span>
@@ -70,30 +70,31 @@
                     <span>[[[Publish new listing]]]</span>
                 </a>
             </li>
-            }
-            else
-            {            
-            <li class="">                
-                <a href="@Url.Action("Dashboard", "Manage", new { Area = "" })">
-                    <i class="fa fa-dashboard"></i> <span>[[[Dashboard]]]</span>
-                </a>
-            </li>
-
+        }
+        else
+        {
             <li class="hidden-lg hidden-md">                
                 <a href="@Url.Action("ListingUpdate", "Listing")">
                     <span>[[[Publish new listing]]]</span>
                 </a>
+            </li>        
+        if (User.IsInRole("Owner") || User.IsInRole("Administrator"))
+        {
+            <li class="">
+                <a href="@Url.Action("Dashboard", "Manage", new { Area = "" })">
+                    <i class="fa fa-dashboard"></i> <span>[[[Dashboard]]]</span>
+                </a>
             </li>
-
-                if (User.IsInRole("Administrator"))
-                {
+        }
+        if (User.IsInRole("Administrator"))
+        {
                 <li>
                     <a target="_blank" href="@Url.Action("Index", "Manage", new {Area ="Admin" })">
                         <i class="fa fa-desktop"></i> <span>[[[Admin Panel]]]</span>
                     </a>
                 </li>
                 }
-            }
+        }
 
         <li class="divider"><i class="fa fa-th-list"></i> [[[Categories]]]</li>
 
